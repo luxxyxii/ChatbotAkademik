@@ -2,11 +2,11 @@ FROM python:3.10-slim
 
 WORKDIR /app
 
-COPY requirements.txt .
+# copy semua file ke container
+COPY . /app
+
+# install dependencies
 RUN pip install --no-cache-dir -r requirements.txt
 
-COPY . .
-
-EXPOSE 7860
-
+# jalankan aplikasi
 CMD ["python", "app.py"]
