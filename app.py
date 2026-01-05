@@ -1,24 +1,31 @@
-from flask import Flask, request, jsonify
-from flask_cors import CORS
-from chatbot import Chatbot
-import os
+import gradio as gr
+import pickle
+import json
+import random
 
-app = Flask(__name__)
-CORS(app)
+# Load model
+model = pickle.load(open("model.pkl", "rb"))
+vectorizer = pickle.load(open("vectorizer.pkl", "rb"))
 
-bot = Chatbot()
+with open("intents.json", "r", encoding="utf-8") as f:
+    intents = json.load(f)
 
-@app.route("/", methods=["GET"])
-def home():
-    return "Chatbot Asisten Deadline API is running"
+def chatbot_response(message):
+    vector = vectorizer.transform([message])
+    tag = model.predict(vector)[0]
 
-@app.route("/chat", methods=["POST"])
-def chat():
-    data = request.json
-    message = data.get("message", "")
-    response = bot.get_response(message)
-    return jsonify({"response": response})
+    for intent in intents["intents"]:
+        if intent["tag"] == tag:
+            return random.choice(intent["responses"])
 
-if __name__ == "__main__":
-    port = int(os.environ.get("PORT", 8080))
-    app.run(host="0.0.0.0", port=port)
+    return "Maaf, saya belum memahami pertanyaan tersebut."
+
+iface = gr.Interface(
+    fn=chatbot_response,
+    inputs=gr.Textbox(lines=2, placeholder="Tanya soal akademik..."),
+    outputs="text",
+    title="Chatbot Akademik",
+    description="Asisten akademik berbasis Machine Learning"
+)
+
+iface.launch()

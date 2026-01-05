@@ -1,5 +1,4 @@
-flask
-flask-cors
+gradio
 scikit-learn
 numpy
-joblib
+nltk
