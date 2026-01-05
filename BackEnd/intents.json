@@ -1,0 +1,248 @@
+{
+  "intents": [
+
+    {
+      "tag": "salam_pagi",
+      "patterns": [
+        "selamat pagi",
+        "pagi",
+        "good morning",
+        "apa kabar?",
+        "kabar ku baik"
+      ],
+      "responses": [
+        "Selamat pagi! Semoga harimu produktif.",
+        "Pagi! Siap menyelesaikan tugas hari ini?",
+        "baik,semoga kamu juga baik😇",
+        "baguslah kalau begitu"
+      ]
+    },
+
+    {
+      "tag": "salam_umum",
+      "patterns": [
+        "halo",
+        "hai",
+        "hi",
+        "hello"
+      ],
+      "responses": [
+        "Halo!",
+        "hai",
+        "hi juga",
+        "Hai! Ada yang bisa saya bantu?"
+      ]
+    },
+
+    {
+      "tag": "deadline",
+      "patterns": [
+        "waktu pengumpulan tugas tinggal sebentar",
+        "batas akhir tugas sudah mendekat",
+        "deadline tugas semakin dekat"
+      ],
+      "responses": [
+        "Sebaiknya kerjakan bagian terpenting terlebih dahulu.",
+        "Atur waktu agar tugas selesai tepat waktu.",
+        "Fokus menyelesaikan tugas sebelum batas pengumpulan."
+      ]
+    },
+
+    {
+      "tag": "bingung_tugas",
+      "patterns": [
+        "saya belum memahami apa yang harus dikerjakan",
+        "instruksi tugas terasa membingungkan",
+        "saya tidak tahu harus mulai dari mana"
+      ],
+      "responses": [
+        "Coba baca kembali instruksi tugas dengan perlahan.",
+        "Mulailah dari bagian yang paling dipahami.",
+        "Jika perlu, tanyakan kepada dosen atau teman."
+      ]
+    },
+
+    {
+      "tag": "estimasi_waktu",
+      "patterns": [
+        "kira-kira berapa lama menyelesaikan makalah",
+        "berapa waktu yang dibutuhkan untuk laporan",
+        "tugas ini biasanya memakan waktu berapa jam"
+      ],
+      "responses": [
+        "Makalah sederhana biasanya membutuhkan beberapa jam.",
+        "Lama pengerjaan tergantung tingkat kesulitan.",
+        "Kerjakan bertahap agar tidak terburu-buru."
+      ]
+    },
+
+    {
+      "tag": "malas_belajar",
+      "patterns": [
+        "malas",
+        "lagi malas",
+        "saya malas belajar",
+        "tidak semangat belajar",
+        "rasanya malas membuka materi",
+        "motivasi belajar menurun"
+      ],
+      "responses": [
+        "Coba mulai dari hal kecil dulu.",
+        "Belajar sebentar lebih baik daripada tidak sama sekali.",
+        "Kadang yang penting bukan mood, tapi konsistensi."
+      ]
+    },
+
+    {
+      "tag": "stress_kuliah",
+      "patterns": [
+        "kuliah membuat saya lelah",
+        "saya lelah secara mental",
+        "saya merasa tertekan",
+        "beban kuliah berat",
+        "kuliah bikin stress"
+      ],
+      "responses": [
+        "Istirahat sejenak bisa membantu menenangkan pikiran.",
+        "Kerjakan satu hal kecil terlebih dahulu.",
+        "Kamu tidak sendirian menghadapi ini."
+      ]
+    },
+
+
+    {
+      "tag": "prokrastinasi",
+      "patterns": [
+        "saya sering menunda mengerjakan tugas",
+        "tugas selalu dikerjakan di menit terakhir",
+        "susah memulai tugas walaupun sudah niat"
+      ],
+      "responses": [
+        "Cobalah mulai dari tugas yang paling ringan.",
+        "Pasang target kecil agar lebih mudah memulai.",
+        "Kerjakan tanpa menunggu mood."
+      ]
+    },
+
+    {
+      "tag": "presentasi",
+      "patterns": [
+        "saya gugup saat presentasi",
+        "takut berbicara di depan kelas",
+        "presentasi membuat saya tidak percaya diri"
+      ],
+      "responses": [
+        "Latihan sebelum presentasi dapat meningkatkan percaya diri.",
+        "Gunakan poin singkat di slide.",
+        "Tarik napas sebelum memulai presentasi."
+      ]
+    },
+
+    {
+      "tag": "sks",
+      "patterns": [
+        "apa itu sks",
+        "sks itu apa",
+        "berapa sks mata kuliah",
+        "jumlah sks semester ini",
+        "saya ambil berapa sks",
+        "maksimal sks per semester",
+        "minimal sks per semester"
+      ],
+      "responses": [
+        "SKS adalah Satuan Kredit Semester yang menunjukkan beban belajar mata kuliah.",
+        "Jumlah SKS menentukan beban studi mahasiswa dalam satu semester.",
+        "Biasanya jumlah SKS per semester disesuaikan dengan aturan kampus dan IP sebelumnya."
+      ]
+    },
+
+
+    {
+      "tag": "nilai",
+      "patterns": [
+        "saya khawatir nilai kuliah menurun",
+        "nilai saya kurang memuaskan",
+        "ingin meningkatkan nilai akademik"
+      ],
+      "responses": [
+        "Perbaiki nilai melalui tugas dan kehadiran.",
+        "Aktif bertanya saat perkuliahan.",
+        "Evaluasi kesalahan dari sebelumnya."
+      ]
+    },
+
+    {
+      "tag": "skripsi",
+      "patterns": [
+        "saya bingung memulai skripsi",
+        "skripsi terasa sangat sulit",
+        "takut tidak bisa menyelesaikan skripsi"
+      ],
+      "responses": [
+        "Mulailah dari membuat outline skripsi.",
+        "Diskusi rutin dengan dosen pembimbing.",
+        "Kerjakan skripsi secara konsisten."
+      ]
+    },
+
+    {
+      "tag": "manajemen_waktu",
+      "patterns": [
+        "saya kesulitan mengatur waktu",
+        "jadwal kuliah dan tugas bentrok",
+        "waktu saya terasa tidak cukup"
+      ],
+      "responses": [
+        "Buat daftar prioritas harian.",
+        "Atur jadwal belajar secara konsisten.",
+        "Gunakan pengingat agar lebih teratur."
+      ]
+    },
+
+    {
+      "tag": "motivasi",
+      "patterns": [
+        "saya merasa ingin menyerah",
+        "saya butuh motivasi",
+        "saya butuh motivasi belajar",
+        "tolong beri saya semangat",
+        "saya ingin menyerah"
+      ],
+      "responses": [
+        "Kamu sudah sejauh ini, jangan berhenti.",
+        "Pelan-pelan tapi tetap maju.",
+        "Istirahat boleh, menyerah jangan."
+      ]
+    },
+
+
+    {
+      "tag": "penutup",
+      "patterns": [
+        "saya ingin keluar",
+        "cukup sampai di sini",
+        "sampai jumpa"
+      ],
+      "responses": [
+        "Sampai jumpa dan semoga sukses!",
+        "Semangat kuliahnya!",
+        "Semoga harimu menyenangkan."
+      ]
+    },
+    {
+      "tag": "terima_kasih",
+      "patterns": [
+        "terima kasih",
+        "makasih",
+        "thanks",
+        "terimakasih chatbot",
+        "makasih ya"
+      ],
+      "responses": [
+        "Sama-sama!",
+        "Senang bisa membantu 😊",
+        "Semangat terus kuliahnya!"
+      ]
+   }
+  ]
+}
